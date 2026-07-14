@@ -1,0 +1,225 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: rgb(224, 160, 22);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Images */
+img {
+    width: 750px;
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Home */
+.home {
+    text-align: center;
+}
+
+/* About */
+.about {
+    text-align: center;
+    border-left: dotted;
+}
+
+/* Headings */
+h2 {
+    color: rgb(224, 160, 22);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+/* Lists */
+ul {
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Gallery */
+#gallery {
+    text-align: center;
+}
+
+#gallery img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Videos */
+video {
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Documents */
+iframe {
+    margin: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Contact Form */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: rgb(224, 160, 22);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgb(185, 130, 15);
+}
+
+/* News Cards */
+.news-card {
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid rgb(224, 160, 22);
+    border-radius: 5px;
+}
+
+/* Tables (if used later) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    img {
+        width: 95%;
+        height: auto;
+    }
+
+    #gallery img {
+        width: 95%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
